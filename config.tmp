@@ -1,5 +1,7 @@
 
 # folders
 BASEPATH="/path/to/your/slang/src/folder"
+TARGET_DIRECTORY="/usr/local/bin"
+
 SLANG_LIBRARY="${BASEPATH}/Library"
 #SLANG_LIBRARY="/usr/local/share/slang/Library"

@@ -2,6 +2,8 @@
 
 source config
 
+VERBOSE="${1}"
+
 echo "Building newest Slang-Extensions release:"
 
 sudo rm /usr/local/share/slang/libs/*
@@ -55,4 +57,3 @@ git pull 1>/dev/null 2>&1
 cd ${BASEPATH}/extensions/extSQLite3/build
 make all 1>/dev/null 2>&1
 sudo cp ${BASEPATH}/extensions/extSQLite3/build/lib/* /usr/local/share/slang/libs
-

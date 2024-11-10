@@ -3,13 +3,12 @@
 source config
 
 # update, build and deploy Slang binaries
-${BASEPATH}/updateSlang.sh
+${BASEPATH}/scripts/updateSlang.sh ${*}
 
 # update, build and deploy extensions
-${BASEPATH}/updateExtensions.sh
+${BASEPATH}/scripts/updateExtensions.sh ${*}
 
 # execute unit tests
-${BASEPATH}/runUnitTests.sh
+${BASEPATH}/scripts/runUnitTests.sh ${*}
 
 echo "Done."
-
