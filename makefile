@@ -27,5 +27,9 @@ slang:
 unit_tests:
 	./runUnitTests.sh
 
+update:
+	git submodule sync
+	git submodule update
+
 .PHONY: clean extensions slang
 
