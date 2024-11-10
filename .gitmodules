@@ -5,3 +5,6 @@
 [submodule "extensions/extBase64/src"]
 	path = extensions/extBase64/src
 	url = git@github.com:slang-lang/extBase64.git
+[submodule "extensions/extCurl/src"]
+	path = extensions/extCurl/src
+	url = git@github.com:slang-lang/extCurl.git
