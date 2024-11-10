@@ -31,6 +31,7 @@ unit_tests:
 	./runUnitTests.sh
 
 update:
+	git pull
 	cd slang;      make update
 	cd extensions; make update
 
