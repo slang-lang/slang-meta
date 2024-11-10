@@ -1,27 +1,4 @@
+
 [submodule "slang/src"]
-    path = slang/src
-    url = git@github.com:slang-lang/slang.git
-[submodule "extension/extBase64/src"]
-    path = extension/extBase64/src
-    url = git@github.com:slang-lang/extBase64.git
-[submodule "extension/extCurl/src"]
-    path = extension/extCurl/src
-    url = git@github.com:slang-lang/extCurl.git
-[submodule "extension/extJson/src"]
-    path = extension/extJson/src
-    url = git@github.com:slang-lang/extJson.git
-[submodule "extension/extMariaDB/src"]
-    path = extension/extMariaDB/src
-    url = git@github.com:slang-lang/extMariaDB.git
-[submodule "extension/extMySQL/src"]
-    path = extension/extMySQL/src
-    url = git@github.com:slang-lang/extMySQL.git
-[submodule "extension/extSlang/src"]
-    path = extension/extSlang/src
-    url = git@github.com:slang-lang/extSlang.git
-[submodule "extension/extSQLite3/src"]
-    path = extension/extSQLite3/src
-    url = git@github.com:slang-lang/extSQLite3.git
-[submodule "extensions/extCurl/src"]
-	path = extensions/extCurl/src
-	url = git@github.com:slang-lang/extCurl.git
+	path = slang/src
+	url = git@github.com:slang-lang/slang.git
