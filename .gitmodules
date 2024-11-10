@@ -20,3 +20,6 @@
 [submodule "extensions/extSlang/src"]
 	path = extensions/extSlang/src
 	url = git@github.com:slang-lang/extensions.git
+[submodule "extensions/extSQLite3/src"]
+	path = extensions/extSQLite3/src
+	url = git@github.com:slang-lang/extSQLite3.git
