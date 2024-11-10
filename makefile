@@ -18,11 +18,14 @@ prepare:
 	git submodule update
 
 release:
-	cd slang;      make release
-	cd extensions; make release;
+	cd slang;      make release; make install
+	cd extensions; make release; make install
+
 slang:
 	cd slang;      make install
 
 unit_tests:
 	./runUnitTests.sh
+
+.PHONY: clean extensions slang
 
