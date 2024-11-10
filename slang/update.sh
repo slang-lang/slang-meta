@@ -5,23 +5,25 @@ source config
 declare -a EXECUTABLES=( "slang" "slang-dbg" "slang-pkg" )
 VERBOSE="${1}"
 
-echo "Building newest Slang release..."
+echo "Building Slang..."
 
 # update code
-cd ${BASEPATH}/slang/src
-if [ "${VERBOSE}" == "-v" ]; then
-	git pull 2>&1
-else
-    git pull 1>/dev/null 2>&1
-fi
+pushd src 1>/dev/null
+    if [ "${VERBOSE}" == "-v" ]; then
+        git pull 2>&1
+    else
+        git pull 1>/dev/null 2>&1
+    fi
+popd 1>/dev/null
 
 # rebuild slang binaries
-cd ${BASEPATH}/slang/build
-if [ "${VERBOSE}" == "-v" ]; then
-	make all 2>&1
-else
-    make all 1>/dev/null 2>&1
-fi
+pushd build 1>/dev/null
+    if [ "${VERBOSE}" == "-v" ]; then
+        make all 2>&1
+    else
+        make all 1>/dev/null 2>&1
+    fi
+popd 1>/dev/null
 
 # create backup of olf binaries
 for file in ${EXECUTABLES[@]}; do

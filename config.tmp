@@ -1,7 +1,11 @@
 
 # folders
 BASEPATH="/path/to/your/slang/src/folder"
+
+SHARE_DIRECTORY="/usr/local/share/slang"
+SHARE_LIBRARY_DIRECTORY="${SHARE_DIRECTORY}/Library"
+SHARE_LIBS_DIRECTORY="${SHARE_DIRECTORY}/libs"
 TARGET_DIRECTORY="/usr/local/bin"
 
+#SLANG_LIBRARY="${SHARE_LIBRARY_DIRECTORY}"
 SLANG_LIBRARY="${BASEPATH}/Library"
-#SLANG_LIBRARY="/usr/local/share/slang/Library"
