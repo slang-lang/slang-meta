@@ -22,3 +22,6 @@
 [submodule "extension/extSQLite3/src"]
     path = extension/extSQLite3/src
     url = git@github.com:slang-lang/extSQLite3.git
+[submodule "extensions/extCurl/src"]
+	path = extensions/extCurl/src
+	url = git@github.com:slang-lang/extCurl.git
