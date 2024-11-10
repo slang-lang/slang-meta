@@ -11,3 +11,6 @@
 [submodule "extensions/extJson/src"]
 	path = extensions/extJson/src
 	url = git@github.com:slang-lang/extJson.git
+[submodule "extensions/extMariaDB/src"]
+	path = extensions/extMariaDB/src
+	url = git@github.com:slang-lang/extMariaDB.git
