@@ -18,7 +18,7 @@ prepare:
 
 release:
 	cd slang;      make release
-	cd extensions; make releas;
+	cd extensions; make release;
 slang:
 	cd slang;      make install
 
