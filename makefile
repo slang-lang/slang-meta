@@ -5,6 +5,10 @@ clean:
 	cd slang;      make clean
 	cd extensions; make clean
 
+compile:
+	cd slang;      make compile
+	cd extensions; make compile
+
 extensions:
 	cd extensions; make install
 

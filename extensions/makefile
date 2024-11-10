@@ -4,6 +4,9 @@ no_target:
 clean:
 	./clean.sh
 
+compile:
+	./compile.sh
+
 install:
 	./install.sh
 

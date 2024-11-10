@@ -4,6 +4,9 @@ no_target:
 clean:
 	cd build; make clean
 
+compile:
+	cd build; make
+
 install:
 	cd build; make
 	./install.sh
