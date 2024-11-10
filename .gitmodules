@@ -8,3 +8,6 @@
 [submodule "extensions/extCurl/src"]
 	path = extensions/extCurl/src
 	url = git@github.com:slang-lang/extCurl.git
+[submodule "extensions/extJson/src"]
+	path = extensions/extJson/src
+	url = git@github.com:slang-lang/extJson.git
