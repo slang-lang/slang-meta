@@ -1,5 +1,9 @@
 .idea
 .vscode
+build
 config
+#extensions/
 file
+slang/build
 unit_tests.log
+
