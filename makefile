@@ -8,7 +8,6 @@ clean:
 extensions:
 	cd extensions; make install
 
-
 install:
 	cd slang;      make install
 	cd extensions; make install

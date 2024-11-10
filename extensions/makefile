@@ -10,3 +10,6 @@ install:
 release:
 	./release.sh
 
+update:
+	./update.sh
+

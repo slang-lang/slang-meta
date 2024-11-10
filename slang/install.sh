@@ -7,15 +7,6 @@ VERBOSE="${1}"
 
 echo "Building Slang..."
 
-# update code
-pushd src 1>/dev/null
-    if [ "${VERBOSE}" == "-v" ]; then
-        git pull 2>&1
-    else
-        git pull 1>/dev/null 2>&1
-    fi
-popd 1>/dev/null
-
 # rebuild slang binaries
 pushd build 1>/dev/null
     if [ "${VERBOSE}" == "-v" ]; then
@@ -34,3 +25,4 @@ done
 
 # deploy binaries
 sudo cp ${BASEPATH}/slang/build/bin/slang*/* /usr/local/bin
+
