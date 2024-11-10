@@ -5,15 +5,17 @@ source config
 declare -a EXECUTABLES=( "slang" "slang-dbg" "slang-pkg" )
 VERBOSE="${1}"
 
-echo "Building Slang..."
+echo "Installing Slang..."
 
 # rebuild slang binaries
 pushd build 1>/dev/null
+
     if [ "${VERBOSE}" == "-v" ]; then
         make all 2>&1
     else
         make all 1>/dev/null 2>&1
     fi
+
 popd 1>/dev/null
 
 # create backup of olf binaries
