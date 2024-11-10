@@ -2,3 +2,6 @@
 [submodule "slang/src"]
 	path = slang/src
 	url = git@github.com:slang-lang/slang.git
+[submodule "extensions/extBase64/src"]
+	path = extensions/extBase64/src
+	url = git@github.com:slang-lang/extBase64.git
