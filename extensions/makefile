@@ -1,5 +1,5 @@
 no_target:
-	# nothing to do here
+	make install
 
 clean:
 	echo "clean"

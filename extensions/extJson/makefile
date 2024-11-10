@@ -1,4 +1,5 @@
 no_target:
+	make install
 	
 install:
 	cd build; make

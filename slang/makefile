@@ -1,3 +1,6 @@
+no_target:
+	make install
+
 clean:
 	cd build; make clean
 

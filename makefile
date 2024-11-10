@@ -1,4 +1,5 @@
 no_target:
+	make install
 
 clean:
 	cd slang;      make clean
