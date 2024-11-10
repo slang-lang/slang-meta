@@ -14,3 +14,6 @@
 [submodule "extensions/extMariaDB/src"]
 	path = extensions/extMariaDB/src
 	url = git@github.com:slang-lang/extMariaDB.git
+[submodule "extensions/extMySQL/src"]
+	path = extensions/extMySQL/src
+	url = git@github.com:slang-lang/extMySQL.git
