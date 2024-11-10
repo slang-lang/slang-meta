@@ -12,5 +12,6 @@ release:
 	mkdir -p build; cd build; cmake -DBUILD=Release ../src
 
 update:
-	./update.sh
+	git submodule sync .
+	git submodule update .
 

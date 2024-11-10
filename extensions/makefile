@@ -2,14 +2,16 @@ no_target:
 	make install
 
 clean:
-	echo "clean"
+	./clean.sh
 
 install:
 	./install.sh
 
 release:
-	./release.sh
+	make update
+	make install
 
 update:
-	./update.sh
+	git submodule sync .
+	git submodule update .
 

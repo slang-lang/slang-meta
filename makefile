@@ -27,8 +27,8 @@ unit_tests:
 	./runUnitTests.sh
 
 update:
-	git submodule sync
-	git submodule update
+	cd slang;      make update
+	cd extensions; make update
 
 .PHONY: clean extensions slang
 

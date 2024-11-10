@@ -4,12 +4,12 @@ source config
 
 VERBOSE="${1}"
 
-echo "Building Slang extensions:"
+echo "Installing Slang extensions:"
 
 for directory in */; do
     pushd ${directory} 1>/dev/null
 
-        echo "Building $(pwd)..."
+        echo "Installing $(pwd)..."
 
         mkdir -p build
 
