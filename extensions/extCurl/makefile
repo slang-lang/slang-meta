@@ -4,6 +4,11 @@ no_target:
 install:
 	cd build; make
 
+prepare:
+	mkdir -p build
+	cd build; cmake -DBUILD=Release ../src
+
 release:
-	mkdir -p build; cd build; cmake -DBUILD=Release ../src
+	make prepare
+	make install
 

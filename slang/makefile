@@ -1,5 +1,5 @@
 no_target:
-	make install
+	make compile
 
 clean:
 	cd build; make clean
@@ -11,8 +11,12 @@ install:
 	cd build; make
 	./install.sh
 
-release:
+prepare:
 	mkdir -p build; cd build; cmake -DBUILD=Release ../src
+
+release:
+	make prepare
+	make install
 
 update:
 	git submodule sync .

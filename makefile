@@ -1,5 +1,5 @@
 no_target:
-	make install
+	make compile
 
 clean:
 	cd slang;      make clean
@@ -19,6 +19,8 @@ install:
 prepare:
 	git submodule init
 	git submodule update
+	cd slang;      make prepare
+	cd extensions; make prepare
 
 release:
 	cd slang;      make release; make install
