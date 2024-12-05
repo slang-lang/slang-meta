@@ -1,5 +1,5 @@
 no_target:
-	make install
+	make compile
 
 clean:
 	./clean.sh
@@ -9,6 +9,8 @@ compile:
 
 install:
 	./install.sh
+
+prepare:
 
 release:
 	make update
