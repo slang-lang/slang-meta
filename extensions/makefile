@@ -11,6 +11,7 @@ install:
 	./install.sh
 
 prepare:
+	./prepare.sh
 
 release:
 	make update

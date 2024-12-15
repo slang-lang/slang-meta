@@ -11,8 +11,6 @@ for directory in */; do
 
         echo "Compiling $(pwd)..."
 
-        mkdir -p build
-
         pushd build 1>/dev/null
 
             if [ "${VERBOSE}" == "-v" ]; then
