@@ -13,11 +13,11 @@ for directory in */; do
 
         pushd build 1>/dev/null
 
-            if [ "${VERBOSE}" == "-v" ]; then
+            #if [ "${VERBOSE}" == "-v" ]; then
                make all
-            else
-               make all 1>/dev/null 2>&1
-            fi
+            #else
+            #   make all 1>/dev/null 2>&1
+            #fi
 
         popd 1>/dev/null
 

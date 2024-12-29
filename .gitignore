@@ -1,8 +1,8 @@
+.DS_store
 .idea
 .vscode
-build
 config
-#extensions/
+build
 file
 slang/build
 unit_tests.log
