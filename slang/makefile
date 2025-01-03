@@ -5,10 +5,10 @@ clean:
 	cd build; make clean
 
 compile:
-	cd build; make
+	cd build; make all
 
 install:
-	cd build; make
+	cd build; make all
 	./install.sh
 
 prepare:
