@@ -4,10 +4,15 @@ no_target:
 clean:
 	cd slang;      make clean
 	cd extensions; make clean
+	cd docs;       make clean
 
 compile:
 	cd slang;      make compile
 	cd extensions; make compile
+	cd docs;       make compile
+
+docs:
+	exit
 
 extensions:
 	cd extensions; make install
@@ -15,17 +20,19 @@ extensions:
 install:
 	cd slang;      make install
 	cd extensions; make install
+	cd docs;       make install
 
 prepare:
 	git submodule init
 	git submodule update
-	cd docs;       make prepare
 	cd slang;      make prepare
 	cd extensions; make prepare
+	cd docs;       make prepare
 
 release:
 	cd slang;      make release
 	cd extensions; make release
+	cd docs;       make release
 
 slang:
 	cd slang;      make install
@@ -35,9 +42,9 @@ unit_tests:
 
 update:
 	git pull
-	cd docs;       make update
 	cd slang;      make update
 	cd extensions; make update
+	cd docs;       make update
 
 .PHONY: clean extensions slang
 
