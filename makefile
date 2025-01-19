@@ -19,6 +19,7 @@ install:
 prepare:
 	git submodule init
 	git submodule update
+	cd docs;       make prepare
 	cd slang;      make prepare
 	cd extensions; make prepare
 
@@ -34,6 +35,7 @@ unit_tests:
 
 update:
 	git pull
+	cd docs;       make update
 	cd slang;      make update
 	cd extensions; make update
 

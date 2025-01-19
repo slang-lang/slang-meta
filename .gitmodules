@@ -1,4 +1,7 @@
 
+[submodule "docs/src"]
+	path = docs/src
+	url = https://github.com/slang-lang/docs.git
 [submodule "slang/src"]
 	path = slang/src
 	url = https://github.com/slang-lang/slang.git
