@@ -1,4 +1,3 @@
-
 [submodule "docs/src"]
 	path = docs/src
 	url = https://github.com/slang-lang/docs.git
@@ -26,3 +25,4 @@
 [submodule "extensions/extSQLite3/src"]
 	path = extensions/extSQLite3/src
 	url = https://github.com/slang-lang/extSQLite3.git
+
