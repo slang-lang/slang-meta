@@ -15,7 +15,7 @@ docs:
 	exit
 
 extensions:
-	cd extensions; make install
+	cd extensions; make compile
 
 install:
 	cd slang;      make install
@@ -35,7 +35,7 @@ release:
 	cd docs;       make release
 
 slang:
-	cd slang;      make install
+	cd slang;      make compile
 
 unit_tests:
 	./runUnitTests.sh
