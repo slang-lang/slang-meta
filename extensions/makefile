@@ -14,7 +14,8 @@ prepare:
 	./prepare.sh
 
 release:
-	make update
+	#make update
+	make prepare
 	make install
 
 update:
