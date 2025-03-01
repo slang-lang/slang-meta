@@ -15,8 +15,7 @@ for directory in */; do
 
             make clean
 
-	popd 1>/dev/null
+        popd 1>/dev/null
 
     popd 1>/dev/null
 done
-

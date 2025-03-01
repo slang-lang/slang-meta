@@ -1,8 +1,17 @@
+include config
+
 no_target:
-	make install
-	
-install:
+	make compile
+
+clean:
+	cd build; make clean
+
+compile:
 	cd build; make
+
+install:
+	make compile
+	sudo cp build/lib/* ${SHARE_LIBS_DIRECTORY}/
 
 prepare:
 	mkdir -p build
@@ -10,5 +19,4 @@ prepare:
 
 release:
 	make prepare
-	make install
-
+	make compile

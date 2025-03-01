@@ -23,7 +23,7 @@ for directory in */; do
 
         popd 1>/dev/null
 
-        sudo cp build/lib/* /usr/local/share/slang/libs
+        sudo cp build/lib/* ${SHARE_LIBS_DIRECTORY}/
 
     popd 1>/dev/null
 done
