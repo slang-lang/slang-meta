@@ -19,6 +19,9 @@
 [submodule "extensions/extMySQL/src"]
 	path = extensions/extMySQL/src
 	url = https://github.com/slang-lang/extMySQL.git
+[submodule "extensions/extPipe/src"]
+	path = extensions/extPipe/src
+	url = https://github.com/slang-lang/extPipe.git
 [submodule "extensions/extSlang/src"]
 	path = extensions/extSlang/src
 	url = https://github.com/slang-lang/extensions.git
