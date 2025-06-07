@@ -13,14 +13,3 @@ for file in ${EXECUTABLES[@]}; do
 
 	sudo mv "${TARGET_DIRECTORY}/${file}" "${TARGET_DIRECTORY}/${file}_${VERSION}"
 done
-
-# deploy binaries
-sudo cp ${BASEPATH}/slang/build/bin/slang*/*       /usr/local/bin/
-# user scripts
-sudo cp ${BASEPATH}/slang/src/bundle/bin/*         /usr/local/bin/
-# library scripts
-sudo cp -r ${BASEPATH}/slang/src/bundle/scripts/*  /usr/lib/
-# man pages
-sudo cp ${BASEPATH}/slang/src/bundle/man/*         /usr/share/man/man1/
-# configuration
-#sudo cp ${BASEPATH}/slang/src/bundle/share/*       /usr/share/
