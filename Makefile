@@ -14,7 +14,7 @@ compile:
 	cd docs;       $(MAKE) compile
 
 docs:
-	exit
+	$(MAKE) -C docs
 
 extensions:
 	cd extensions; $(MAKE) compile
@@ -25,7 +25,7 @@ install:
 	cd docs;       $(MAKE) install
 
 packages:
-	cd packages; $(MAKE) slang
+	$(MAKE) -C packages
 
 prepare:
 	git submodule init

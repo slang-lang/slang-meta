@@ -14,7 +14,7 @@ extensions:
 	#$(MAKE) -C extensions
 
 lint:
-	lintian slang_*.deb
+	lintian *.deb
 
 slang:
 	$(MAKE) -C slang
