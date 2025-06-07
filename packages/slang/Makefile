@@ -13,9 +13,9 @@ package:
 
 prepare:
 	echo "Preparing package..."
-	cp -r ../../slang/src/bundle/bin/* bin/
-	cp -r ../../slang/src/bundle/man/* man/
-	cp -r ../../slang/src/bundle/scripts/* scripts/
-	cp -r ../../slang/src/bundle/share/* share/
+	cp -r ../../slang/src/Bundle/bin/* bin/
+	cp -r ../../slang/src/Bundle/man/* man/
+	cp -r ../../slang/src/Bundle/scripts/* scripts/
+	cp -r ../../slang/src/Bundle/share/* share/
 	cp ../../slang/src/README.md ./
 	cp ../../slang/build/bin/slang*/* bin/
