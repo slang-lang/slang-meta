@@ -11,7 +11,7 @@ clean:
 	$(MAKE) -C extensions clean
 
 extensions:
-	#$(MAKE) -C extensions
+	$(MAKE) -C extensions
 
 lint:
 	lintian *.deb
