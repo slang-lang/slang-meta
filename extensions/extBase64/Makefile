@@ -13,7 +13,7 @@ compile:
 
 install:
 	$(MAKE) compile
-	sudo cp build/lib/* ${SHARE_LIBS_DIRECTORY}/
+	sudo cp build/lib/* ${SHARE_EXTENSIONS_DIRECTORY}/
 
 prepare:
 	mkdir -p build
