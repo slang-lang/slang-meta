@@ -1,7 +1,5 @@
 .PHONY: all clean package prepare
 
-no_target: all
-
 all: package
 
 clean:
