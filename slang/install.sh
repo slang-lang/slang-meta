@@ -21,7 +21,7 @@ sudo cp ${BASEPATH}/slang/build/bin/slang*/*       /usr/local/bin/
 sudo cp ${BASEPATH}/slang/src/Bundle/bin/*         /usr/local/bin/
 
 # library scripts
-sudo cp -r ${BASEPATH}/slang/src/Bundle/scripts/*  /var/lib/slang/Scripts/
+sudo cp -r ${BASEPATH}/slang/src/Bundle/scripts/*  /var/lib/slang/scripts/
 
 # man pages
 #sudo cp ${BASEPATH}/slang/src/Bundle/man/*         /usr/share/man/man1/
