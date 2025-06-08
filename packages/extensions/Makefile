@@ -2,7 +2,7 @@
 
 no_target: all
 
-all: extBase64 extCurl extJson lint
+all: extBase64 extCurl extJson extMariaDB extMQ extPipe extSlang extSQLite3 lint
 #all: extBase64 extCurl extJson extMariaDB extMQ extMySQL extPipe extSlang extSQLite3 lint
 
 clean:
