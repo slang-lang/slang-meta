@@ -7,11 +7,11 @@ VERBOSE="${1}"
 echo "Updating Slang..."
 
 # rebuild slang binaries
-pushd src 1>/dev/null
+pushd src 1>/dev/null || exit
 
     git fetch -p
     git switch main
     git pull
 
-popd 1>/dev/null
+popd 1>/dev/null || exit
 

@@ -7,7 +7,7 @@ VERBOSE="${1}"
 echo "Compiling Slang..."
 
 # rebuild slang binaries
-pushd build 1>/dev/null
+pushd build 1>/dev/null || exit
 
     if [ "${VERBOSE}" == "-v" ]; then
         make all 2>&1
@@ -15,5 +15,5 @@ pushd build 1>/dev/null
         make all 1>/dev/null 2>&1
     fi
 
-popd 1>/dev/null
+popd 1>/dev/null || exit
 

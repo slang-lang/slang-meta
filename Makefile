@@ -1,7 +1,6 @@
 .PHONY: all clean compile docs extensions install packages prepare release slang unit_tests update
 
-no_target:
-	$(MAKE) compile
+no_target: compile
 
 all: update slang extensions unit_tests packages
 

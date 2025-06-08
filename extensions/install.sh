@@ -7,13 +7,13 @@ VERBOSE="${1}"
 echo "Installing Slang extensions:"
 
 for directory in */; do
-    pushd ${directory} 1>/dev/null
+    pushd "${directory}" 1>/dev/null || exit
 
         echo "Installing $(pwd)..."
 
         mkdir -p build
 
-        pushd build 1>/dev/null
+        pushd build 1>/dev/null || exit
 
             if [ "${VERBOSE}" == "-v" ]; then
                make all
@@ -21,9 +21,9 @@ for directory in */; do
                make all 1>/dev/null 2>&1
             fi
 
-        popd 1>/dev/null
+        popd 1>/dev/null || exit
 
-        sudo cp build/lib/* ${SHARE_LIBS_DIRECTORY}/
+        sudo cp build/lib/* "${SHARE_LIBS_DIRECTORY}"/
 
-    popd 1>/dev/null
+    popd 1>/dev/null || exit
 done
