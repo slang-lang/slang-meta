@@ -1,11 +1,12 @@
-.PHONY: all clean extBase64 extCurl extJson extMariaDB extMQ extMySQL extPipe extSlang extSQLite3
+.PHONY: all clean extApache extBase64 extCurl extJson extMariaDB extMQ extMySQL extPipe extSQLite3
 
 no_target: all
 
-all: extBase64 extCurl extJson extMariaDB extMQ extPipe extSlang extSQLite3 lint
-#all: extBase64 extCurl extJson extMariaDB extMQ extMySQL extPipe extSlang extSQLite3 lint
+all: extApache extBase64 extCurl extJson extMariaDB extMQ extPipe extSQLite3 lint
+#all: extApache extBase64 extCurl extJson extMariaDB extMQ extMySQL extPipe extSQLite3 lint
 
 clean:
+	$(MAKE) -C extApache clean
 	$(MAKE) -C extBase64 clean
 	$(MAKE) -C extCurl clean
 	$(MAKE) -C extJson clean
@@ -13,8 +14,10 @@ clean:
 	$(MAKE) -C extMQ clean
 	$(MAKE) -C extMySQL clean
 	$(MAKE) -C extPipe clean
-	$(MAKE) -C extSlang clean
 	$(MAKE) -C extSQLite3 clean
+
+extApache:
+	$(MAKE) -C extApache
 
 extBase64:
 	$(MAKE) -C extBase64
@@ -36,9 +39,6 @@ extMySQL:
 
 extPipe:
 	$(MAKE) -C extPipe
-
-extSlang:
-	$(MAKE) -C extSlang
 
 extSQLite3:
 	$(MAKE) -C extSQLite3
