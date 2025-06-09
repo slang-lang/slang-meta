@@ -1,4 +1,4 @@
-.PHONY: no_target clean compile install prepare release update #extBase64 extCurl
+.PHONY: no_target clean compile install prepare release update
 
 no_target:
 	$(MAKE) compile
@@ -23,8 +23,3 @@ update:
 	git submodule sync .
 	git submodule update .
 
-#extBase64:
-#	$(MAKE) -C extBase64
-
-#extCurl:
-#	$(MAKE) -C extCurl
