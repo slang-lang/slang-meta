@@ -4,6 +4,9 @@
 [submodule "slang/src"]
 	path = slang/src
 	url = https://github.com/slang-lang/slang.git
+[submodule "extensions/extApache/src"]
+	path = extensions/extApache/src
+	url = https://github.com/slang-lang/extApache.git
 [submodule "extensions/extBase64/src"]
 	path = extensions/extBase64/src
 	url = https://github.com/slang-lang/extBase64.git
@@ -25,9 +28,6 @@
 [submodule "extensions/extPipe/src"]
 	path = extensions/extPipe/src
 	url = https://github.com/slang-lang/extPipe.git
-[submodule "extensions/extSlang/src"]
-	path = extensions/extSlang/src
-	url = https://github.com/slang-lang/extensions.git
 [submodule "extensions/extSQLite3/src"]
 	path = extensions/extSQLite3/src
 	url = https://github.com/slang-lang/extSQLite3.git
