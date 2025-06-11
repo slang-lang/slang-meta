@@ -13,9 +13,11 @@ package:
 
 prepare:
 	echo "Preparing package..."
+	./generate-changelog.sh
 	cp    slang/build/bin/slang*/*   bin/
 	cp -r slang/src/Bundle/bin/*     bin/
 	cp -r slang/src/Bundle/man/*     man/
 	cp -r slang/src/Bundle/scripts/* scripts/
 	cp -r slang/src/Bundle/share/*   share/
 	cp    slang/src/README.md        ./
+

@@ -51,3 +51,4 @@ update:
 	cd slang;      $(MAKE) update
 	cd extensions; $(MAKE) update
 	cd docs;       $(MAKE) update
+

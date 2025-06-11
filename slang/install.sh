@@ -15,10 +15,10 @@ for file in ${EXECUTABLES[@]}; do
 done
 
 # deploy binaries
-sudo cp ${BASEPATH}/slang/build/bin/slang*/*       /usr/local/bin/
+sudo cp ${BASEPATH}/slang/build/bin/slang*/*       /usr/bin/
 
 # user scripts
-sudo cp ${BASEPATH}/slang/src/Bundle/bin/*         /usr/local/bin/
+sudo cp ${BASEPATH}/slang/src/Bundle/bin/*         /usr/bin/
 
 # library scripts
 sudo cp -r ${BASEPATH}/slang/src/Bundle/scripts/*  /var/lib/slang/scripts/
@@ -28,3 +28,4 @@ sudo cp -r ${BASEPATH}/slang/src/Bundle/scripts/*  /var/lib/slang/scripts/
 
 # configuration
 #sudo cp ${BASEPATH}/slang/src/Bundle/share/*       /usr/share/
+
