@@ -1,4 +1,4 @@
-.PHONY: clean compile install prepare release update
+.PHONY: clean compile deploy install prepare release update
 
 no_target:
 
@@ -7,6 +7,9 @@ clean:
 	
 
 compile:
+	
+
+deploy:
 	
 
 install:
