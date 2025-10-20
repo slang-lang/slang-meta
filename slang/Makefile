@@ -1,4 +1,4 @@
-.PHONY: clean compile install prepare release update
+.PHONY: clean compile deploy install prepare release update
 
 no_target:
 	$(MAKE) compile
@@ -9,9 +9,12 @@ clean:
 compile:
 	cd build; $(MAKE) all
 
+deploy:
+	./install.sh
+
 install:
 	cd build; $(MAKE) all
-	./install.sh
+	$(MAKE) deploy
 
 prepare:
 	mkdir -p build; cd build; cmake -DBUILD=Release ../src
