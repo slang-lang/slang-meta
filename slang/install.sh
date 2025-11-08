@@ -11,7 +11,7 @@ echo "Installing Slang..."
 for file in ${EXECUTABLES[@]}; do
 	VERSION=$(${TARGET_DIRECTORY}/${file} --version | sed -n 's/.* \([0-9]\+\.[0-9]\+\.[0-9]\+\).*/\1/p')
 
-	sudo mv "${TARGET_DIRECTORY}/${file}" "${TARGET_DIRECTORY}/${file}_${VERSION}"
+	sudo mv "${TARGET_DIRECTORY}/${file}" "${TARGET_DIRECTORY}/${file}^${VERSION}"
 done
 
 # deploy binaries
