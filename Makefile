@@ -1,4 +1,4 @@
-.PHONY: all clean compile docs extensions install packages prepare release slang unit_tests update
+.PHONY: all clean compile deploy docs extensions install packages prepare release slang unit_tests update
 
 no_target: compile
 
@@ -13,6 +13,11 @@ compile:
 	cd slang;      $(MAKE) compile
 	cd extensions; $(MAKE) compile
 	cd docs;       $(MAKE) compile
+
+deploy:
+	cd slang;      $(MAKE) deploy
+	cd extensions; $(MAKE) deploy
+	cd docs;       $(MAKE) deploy
 
 docs:
 	$(MAKE) -C docs
