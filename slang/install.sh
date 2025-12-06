@@ -2,7 +2,7 @@
 
 source config
 
-declare -a EXECUTABLES=( "slang" "slang-dbg" "slang-pkg" )
+declare -a EXECUTABLES=( "slang" "slang-app" "slang-dbg" "slang-pkg" )
 VERBOSE="${1}"
 
 echo "Installing Slang..."
