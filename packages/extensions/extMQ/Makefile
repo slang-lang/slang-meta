@@ -13,5 +13,7 @@ package:
 
 prepare:
 	echo "Preparing package..."
+	mkdir -p man
+	mkdir -p libs
 	cp -r extension/src/Bundle/man/*    man/
 	cp    extension/build/lib/libSlang* libs/
