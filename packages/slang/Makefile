@@ -13,6 +13,8 @@ package:
 
 prepare:
 	echo "Preparing package..."
+	mkdir -p man
+	mkdir -p libs
 	./generate-changelog.sh
 	cp    slang/build/bin/slang*/*   bin/
 	cp -r slang/src/Bundle/bin/*     bin/
