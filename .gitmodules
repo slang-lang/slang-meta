@@ -1,34 +1,34 @@
 [submodule "docs/src"]
 	path = docs/src
-	url = https://github.com/slang-lang/docs.git
+	url = git@github.com:slang-lang/docs.git
 [submodule "slang/src"]
 	path = slang/src
-	url = https://github.com/slang-lang/slang.git
+	url = git@github.com:slang-lang/slang.git
 [submodule "extensions/extApache/src"]
 	path = extensions/extApache/src
-	url = https://github.com/slang-lang/extApache.git
+	url = git@github.com:slang-lang/extApache.git
 [submodule "extensions/extBase64/src"]
 	path = extensions/extBase64/src
-	url = https://github.com/slang-lang/extBase64.git
+	url = git@github.com:slang-lang/extBase64.git
 [submodule "extensions/extCurl/src"]
 	path = extensions/extCurl/src
-	url = https://github.com/slang-lang/extCurl.git
+	url = git@github.com:slang-lang/extCurl.git
 [submodule "extensions/extJson/src"]
 	path = extensions/extJson/src
-	url = https://github.com/slang-lang/extJson.git
+	url = git@github.com:slang-lang/extJson.git
 [submodule "extensions/extMariaDB/src"]
 	path = extensions/extMariaDB/src
-	url = https://github.com/slang-lang/extMariaDB.git
+	url = git@github.com:slang-lang/extMariaDB.git
 [submodule "extensions/extMQ/src"]
 	path = extensions/extMQ/src
-	url = https://github.com/slang-lang/extMQ.git
+	url = git@github.com:slang-lang/extMQ.git
 [submodule "extensions/extMySQL/src"]
 	path = extensions/extMySQL/src
-	url = https://github.com/slang-lang/extMySQL.git
+	url = git@github.com:slang-lang/extMySQL.git
 [submodule "extensions/extPipe/src"]
 	path = extensions/extPipe/src
-	url = https://github.com/slang-lang/extPipe.git
+	url = git@github.com:slang-lang/extPipe.git
 [submodule "extensions/extSQLite3/src"]
 	path = extensions/extSQLite3/src
-	url = https://github.com/slang-lang/extSQLite3.git
+	url = git@github.com:slang-lang/extSQLite3.git
 
