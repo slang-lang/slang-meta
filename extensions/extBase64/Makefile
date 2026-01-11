@@ -9,19 +9,23 @@ clean:
 	cd build; $(MAKE) clean
 
 compile:
-	cd build; $(MAKE)
+	cd build; $(MAKE) all
+
+deploy:
+	sudo cp build/lib/* ${SHARE_EXTENSIONS_DIRECTORY}/
 
 install:
 	$(MAKE) compile
-	sudo cp build/lib/* ${SHARE_EXTENSIONS_DIRECTORY}/
+	$(MAKE) deploy
 
 prepare:
 	mkdir -p build
-	cd build; cmake -DBUILD=Release ../src
+	cd build; cmake -DSLANG_WORKSPACE_ROOT=${BASEPATH} -DBUILD=Release ../src
 
 release:
 	$(MAKE) prepare
-	$(MAKE) compile
+	$(MAKE) install
 
 update:
 	cd src; git pull
+

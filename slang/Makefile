@@ -1,4 +1,6 @@
-.PHONY: clean compile deploy install prepare release update
+.PHONY: no_target clean compile deploy install prepare release update
+
+include config
 
 no_target:
 	$(MAKE) compile
@@ -13,11 +15,12 @@ deploy:
 	./install.sh
 
 install:
-	cd build; $(MAKE) all
+	$(MAKE) compile
 	$(MAKE) deploy
 
 prepare:
-	mkdir -p build; cd build; cmake -DBUILD=Release ../src
+	mkdir -p build
+	cd build; cmake -DSLANG_WORKSPACE_ROOT=${BASEPATH} -DBUILD=Release ../src
 
 release:
 	$(MAKE) prepare
