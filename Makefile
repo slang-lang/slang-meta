@@ -34,6 +34,8 @@ packages:
 	$(MAKE) -C packages
 
 prepare:
+	./prepare.sh
+	git pull
 	git submodule init
 	git submodule update
 	cd slang;      $(MAKE) prepare
