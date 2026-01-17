@@ -21,3 +21,4 @@ for directory in */; do
 
     popd 1>/dev/null
 done
+
