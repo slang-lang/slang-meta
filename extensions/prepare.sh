@@ -11,13 +11,8 @@ for directory in */; do
 
         echo "Preparing $(pwd)..."
 
-        mkdir -p build
-
-        pushd build 1>/dev/null
-
-            cmake -DSLANG_WORKSPACE_ROOT=${BASEPATH} -DBUILD=Release ../src
-
-        popd 1>/dev/null
+        make prepare
 
     popd 1>/dev/null
 done
+
