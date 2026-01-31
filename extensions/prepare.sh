@@ -15,7 +15,7 @@ for directory in */; do
 
         pushd build 1>/dev/null
 
-            cmake -DBUILD=Release ../src
+            cmake -DSLANG_WORKSPACE_ROOT=${BASEPATH} -DBUILD=Release ../src
 
         popd 1>/dev/null
 
