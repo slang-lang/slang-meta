@@ -1,4 +1,4 @@
-.PHONY: no_target clean compile deploy install prepare release update
+.PHONY: no_target clean compile deploy distclean install prepare release update
 
 no_target:
 	$(MAKE) compile
@@ -11,6 +11,9 @@ compile:
 
 deploy:
 	./install.sh
+
+distclean:
+	./clean.sh
 
 install:
 	./install.sh

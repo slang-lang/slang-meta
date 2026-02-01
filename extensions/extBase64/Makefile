@@ -1,4 +1,4 @@
-.PHONY: no_target clean compile install prepare release update
+.PHONY: no_target clean compile deploy distclean install prepare release update
 
 include config
 
@@ -13,6 +13,9 @@ compile:
 
 deploy:
 	sudo cp build/lib/* ${SHARE_EXTENSIONS_DIRECTORY}/
+
+distclean:
+	rm -r build
 
 install:
 	$(MAKE) compile
