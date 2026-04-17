@@ -1,9 +1,16 @@
-.PHONY: no_target clean compile deploy distclean install prepare release update
+.PHONY: no_target check clean compile deploy distclean install prepare release update
 
 include config
 
 no_target:
 	$(MAKE) compile
+
+check:
+	@if [ ! -f build/compile_commands.json ]; then \
+		echo "Error: build/compile_commands.json not found. Please run 'make prepare' first."; \
+		exit 1; \
+	fi
+	@clang-tidy -p build $(shell find src -name '*.cpp' -type f | sort)
 
 clean:
 	cd build; $(MAKE) clean
@@ -31,4 +38,3 @@ release:
 
 update:
 	cd src; git pull
-

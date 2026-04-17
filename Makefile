@@ -1,8 +1,12 @@
-.PHONY: all clean compile deploy distclean docs extensions install packages prepare release slang unit_tests update
+.PHONY: all check clean compile deploy distclean docs extensions install packages prepare release slang unit_tests update
 
 no_target: compile
 
 all: update slang extensions unit_tests packages
+
+check:
+	cd slang;      $(MAKE) check
+	cd extensions; $(MAKE) check
 
 clean:
 	cd slang;      $(MAKE) clean
@@ -63,4 +67,3 @@ update:
 	cd slang;      $(MAKE) update
 	cd extensions; $(MAKE) update
 	cd docs;       $(MAKE) update
-
