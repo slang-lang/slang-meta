@@ -10,6 +10,8 @@ clean:
 
 compile:
 
+config:
+
 deploy:
 
 distclean:
